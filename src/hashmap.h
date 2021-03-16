@@ -39,10 +39,8 @@ char compareIds(void *id1, void *id2, int length1, int length2) {
 		return 0;
 	}
 	for (int i = 0; i < length1; i++) {
-		if (*((char *) (id1 + i)) != *((char *) (id2 + i))) {
-			fprintf(stderr, "Ids different at byte %d\n", i);
+		if (*((char *) (id1 + i)) != *((char *) (id2 + i)))
 			return 0;
-		}
 	}
 
 	return 1;
