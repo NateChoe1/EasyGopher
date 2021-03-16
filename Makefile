@@ -1,2 +1,2 @@
 all:
-	$(CC) src/main.c -o build/gopher
+	$(CC) src/main.c -O3 -o build/gopher
